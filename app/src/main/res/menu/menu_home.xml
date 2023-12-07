@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/baseline_home_24"
+            android:title="Trang chủ" />
+        <item
+            android:id="@+id/nav_mnaccount"
+            android:icon="@drawable/baseline_manage_accounts_24"
+            android:title="Quản lí tài khoản" />
+
+        <item
+            android:id="@+id/nav_lsdh"
+            android:icon="@drawable/shopping_cart_24"
+            android:title="Lịch sử đơn hàng"/>
+<!--        <item-->
+<!--            android:id="@+id/nav_qldh"-->
+<!--            android:title="Quản lý đơn hàng"-->
+<!--            android:icon="@drawable/baseline_exit_to_app_24"-->
+<!--            />-->
+			<item
+            android:id="@+id/nav_ttdh"
+            android:icon="@drawable/baseline_local_shipping_24"
+            android:title="Tiến trình đơn hàng"/>
+        <item
+            android:id="@+id/nav_login"
+            android:title="Đăng nhập"
+            android:icon="@drawable/baseline_exit_to_app_24"
+            />
+        <item
+            android:id="@+id/nav_logout"
+            android:title="Đăng xuất"
+            android:icon="@drawable/baseline_exit_to_app_24"
+            />
+    </group>
+</menu>

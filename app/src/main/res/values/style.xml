@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MyToolbarPopupTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:popupBackground">@android:color/black</item>
+    </style>
+    <style name="MyCustomTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">14.5sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

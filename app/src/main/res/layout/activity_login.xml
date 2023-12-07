@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User.LoginActivity"
+    >
+    <ImageView
+        android:id="@+id/Logo"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="5dp"
+        android:padding="20dp"
+        android:src="@drawable/logo"
+        />
+    <LinearLayout
+        android:id="@+id/form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="27dp"
+        android:paddingEnd="27dp"
+        android:gravity="center"
+        android:layout_marginTop="36dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/Logo">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            app:startIconDrawable="@drawable/baseline_email_24"
+            app:startIconTint="#49286E"
+            android:background="@color/white"
+            android:layout_marginBottom="27dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:background="@color/white"
+                android:ems="15"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            app:startIconDrawable="@drawable/baseline_vpn_key_24"
+            android:background="@color/white"
+            app:startIconTint="#49286E"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/black"
+            android:layout_marginBottom="36dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:background="@color/white"
+                android:ems="15"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btLogin"
+                android:layout_width="260dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/white"
+                android:text="ĐĂNG NHẬP"
+                android:textAllCaps="false"
+                android:backgroundTint="#d95a00"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/btregisterss"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="90dp"
+                android:hint="   Bạn chưa có tài khoản? ĐĂNG KÍ!"
+                android:textStyle="bold"
+                android:backgroundTint="#0226E0"
+                android:textColorHint="@color/black"
+                android:layout_marginLeft="15dp"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

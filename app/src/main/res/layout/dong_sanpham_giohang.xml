@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="10"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp">
+    <LinearLayout
+        android:gravity="center"
+        android:layout_margin="5dp"
+
+        android:layout_width="100dp"
+        android:layout_height="100dp">
+
+        <ImageView
+            android:id="@+id/imgviewgiohang"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_launcher_background" />
+    </LinearLayout>
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+
+        android:layout_width="160sp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:text="Tên sản phẩm"
+            android:textStyle="bold"
+            android:id="@+id/textviewtengiohang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_marginTop="3dp"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:text="$$$"
+            android:id="@+id/textviewgiagiohang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_Quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Số lượng: " />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF9800"
+            android:textSize="10dp"
+            android:text="Cập nhật" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF0707"
+            android:text="Hủy bỏ" />
+
+
+    </LinearLayout>
+</LinearLayout>

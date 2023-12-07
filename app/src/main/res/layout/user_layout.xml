@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+ <androidx.drawerlayout.widget.DrawerLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:id="@+id/drawer_layout"
+     android:fitsSystemWindows="true"
+     tools:openDrawer="start">
+     <androidx.constraintlayout.widget.ConstraintLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+
+         <com.google.android.material.appbar.AppBarLayout
+             android:id="@+id/app_bar"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:theme="@style/ThemeOverlay.AppCompat.Dark"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent">
+
+             <androidx.appcompat.widget.Toolbar
+                 android:id="@+id/toolbar1111"
+                 android:layout_width="match_parent"
+                 android:layout_height="?attr/actionBarSize"
+                 android:background="?attr/colorPrimary"
+                 app:popupTheme="@style/Widget.AppCompat.Light.PopupMenu" />
+         </com.google.android.material.appbar.AppBarLayout>
+
+         <FrameLayout
+             android:id="@+id/admin_fragment"
+             android:layout_width="match_parent"
+             android:layout_height="0dp"
+             app:layout_behavior="@string/appbar_scrolling_view_behavior"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintHorizontal_bias="0.0"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toBottomOf="@id/app_bar"
+             app:layout_constraintVertical_bias="0.0">
+
+         </FrameLayout>
+     </androidx.constraintlayout.widget.ConstraintLayout>
+
+     <com.google.android.material.navigation.NavigationView
+         android:id="@+id/nav_view"
+         android:layout_width="wrap_content"
+         android:layout_height="match_parent"
+         android:layout_gravity="start"
+         android:fitsSystemWindows="true"
+
+         app:menu="@menu/menu_home" />
+ </androidx.drawerlayout.widget.DrawerLayout>
+</LinearLayout>

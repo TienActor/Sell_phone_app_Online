@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="#ff9800"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnGoBack"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#ff9800"
+                android:src="@drawable/baseline_arrow_back_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="30sp"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="CHI TIẾT SẢN PHẨM" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/product_img_url"
+                android:layout_width="340dp"
+                android:layout_height="380dp"
+                android:layout_gravity="center"
+                android:contentDescription="product"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher_background" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/product_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="40sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    tools:text="Product Name" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Giá: "
+                        android:textSize="30sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/product_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#B1EF09"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:textSize="30sp"
+                        tools:text="Price" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/product_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    tools:text="Amount" />
+
+                <TextView
+                    android:id="@+id/product_year_release"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="8dp"
+                    android:textSize="20sp"
+                    tools:text="Year Release" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/product_storage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="8dp"
+                        android:textSize="20sp"
+                        tools:text="Storage" />
+
+                    <TextView
+                        android:id="@+id/product_memory"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="8dp"
+                        android:textSize="20sp"
+                        tools:text="Memory" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/product_brand"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"
+                        android:layout_marginTop="8dp"
+                        android:textSize="20sp"
+                        tools:text="Brand" />
+
+                    <TextView
+                        android:id="@+id/product_os"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="8dp"
+                        android:textSize="20sp"
+                        tools:text="OS" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--        <LinearLayout-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginTop="8dp"-->
+        <!--            android:orientation="horizontal"-->
+        <!--            android:gravity="center">-->
+
+        <!--            <Button-->
+        <!--                android:id="@+id/buy_now_button"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:backgroundTint="#D1A159"-->
+        <!--                android:layout_marginEnd="10dp"-->
+        <!--                android:text="Mua ngay" />-->
+        <!--            -->
+        <!--        </LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextQuantity"
+                android:layout_width="235dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="Nhập số lượng giỏ hàng"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/add_to_cart_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#ff9800"
+                android:gravity="center"
+                android:layout_marginStart="10dp"
+                android:text="Thêm vào giỏ" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="27dp"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:text="⭐Đánh giá sản phẩm⭐" />
+
+            <Button
+                android:id="@+id/reviewPost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#ff9800"
+                android:text="Đánh giá" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcvReview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+</ScrollView>

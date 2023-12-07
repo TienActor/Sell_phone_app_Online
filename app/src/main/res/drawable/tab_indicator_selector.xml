@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Trạng thái tab không được chọn -->
+    <item android:state_selected="false"
+        android:color="@android:color/white" />
+    <!-- Trạng thái tab được chọn -->
+    <item android:state_selected="true"
+        android:color="#d95a00" />
+</selector>

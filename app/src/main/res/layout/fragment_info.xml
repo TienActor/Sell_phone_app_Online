@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#f4f4f4">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="#ffffff"
+        android:elevation="4dp"
+        android:layout_gravity="start">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Thông tin khách hàng"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/labelName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên:"
+            android:layout_below="@id/title"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Test"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@id/labelName"
+            android:layout_below="@id/title"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="8dp"/>
+
+        <TextView
+            android:id="@+id/labelEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email:"
+            android:layout_below="@id/labelName"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/textViewEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="example@example.com"
+            android:layout_toRightOf="@id/labelEmail"
+            android:layout_below="@id/textViewName"
+            android:textColor="@color/black"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"/>
+
+        <TextView
+            android:id="@+id/labelDiaChi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Địa Chi:"
+            android:layout_below="@id/labelEmail"
+            android:layout_marginTop="8dp"/>
+        <TextView
+            android:id="@+id/textViewAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="123 cay chuoi"
+            android:layout_toRightOf="@id/labelDiaChi"
+            android:layout_below="@id/textViewEmail"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"/>
+
+        <TextView
+            android:id="@+id/labelSDT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số điện thoại:"
+            android:layout_below="@id/labelDiaChi"
+            android:layout_marginTop="8dp"/>
+        <TextView
+            android:id="@+id/textViewPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="123 123 123"
+            android:layout_toRightOf="@id/labelDiaChi"
+            android:textColor="@color/black"
+            android:layout_below="@id/textViewAddress"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="40dp"/>
+        <TextView
+            android:id="@+id/labelMK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mật Khẩu:"
+            android:layout_below="@id/labelSDT"
+            android:layout_marginTop="8dp"/>
+        <TextView
+            android:id="@+id/textViewPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="123 123 123"
+            android:layout_toRightOf="@id/labelDiaChi"
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:layout_below="@id/textViewPhone"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="32dp"/>
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/labelMK"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="Cập nhật"
+            android:backgroundTint="#d95a00"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+</ScrollView>
